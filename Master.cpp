@@ -50,8 +50,6 @@ void SPI_MasterTransmit(char cData)
 int main(void)
 {
 
-
-
 SPI_MasterInit();
 
 int flag_data = 2;
@@ -85,7 +83,7 @@ while(1)
 	else
 	{
 	
-	SPI_MasterTransmit(0x21);	//Symbol for "!"
+	SPI_MasterTransmit(0x21);	//ASCII code for "!"
 		
 		flag_data++;
 		
