@@ -43,34 +43,8 @@ void SPI_MasterTransmit(char cData)
 	
 }
 
-//SPI in Slave mode
-/*
-void SPI_SlaveInit(void)
-{
-
-	// Set MISO output, all others input
-	PORTB |= (1 << PORTB4);
-	
-	// Enable SPI
-	SPCR = (1<<SPE);
-}
-
-char SPI_SlaveReceive(void)
-{
-	// Wait for reception complete 
-	while(!(SPSR & (1 << SPIF)))
-	{
-		
-		//Do nothing
-		
-	}
-	
-	// Return Data Register
-	return SPDR;
-}
 //-----------------------------------------------------------------------------------------//
 //-----------------------------------------------------------------------------------------//
-*/
 
 
 int main(void)
