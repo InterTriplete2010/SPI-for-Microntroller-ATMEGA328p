@@ -1,6 +1,6 @@
 //Set the clock
 #ifndef F_CPU
-#define F_CPU 8000000UL	//Clock expressed in MHz
+#define F_CPU 16000000UL	//Clock expressed in MHz
 #endif
 
 //Set the BAUD rate
@@ -64,7 +64,7 @@ while(1)
 {
 	
 	PORTB &= ~(1 << PORTB2);	//Enable the transmission of the data in Master mode
-	_delay_ms(5000);
+	_delay_ms(1000);
 	
 	if (flag_data % 2 == 0)
 	{
@@ -92,7 +92,7 @@ while(1)
 	
  PORTB |= (1 << PORTB2);	//Disable the transmission of the data in Master mode
  
- _delay_ms(5000);
+ _delay_ms(1000);
  
 }
 
