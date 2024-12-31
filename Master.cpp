@@ -1,6 +1,6 @@
 //Set the clock
 #ifndef F_CPU
-#define F_CPU 2000000UL	//Clock expressed in MHz
+#define F_CPU 8000000UL	//Clock expressed in MHz
 #endif
 
 //Set the BAUD rate
