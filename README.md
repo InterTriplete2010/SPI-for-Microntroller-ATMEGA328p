@@ -9,6 +9,6 @@ These two simple files are used to have two arduino UNO (Microchip: ATMEGA328p) 
 
 The output is: "Hello World!".
 
-I hope that this code can be useful to soemone. 
+I hope that this code can be useful to someone. 
 
 If you have any questions and/or want to report bugs, please e-mail me (Ale) at: pressalex@hotmail.com
