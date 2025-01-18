@@ -1,6 +1,6 @@
 //Set the clock
 #ifndef F_CPU
-#define F_CPU 16000000UL	//Clock expressed in MHz
+#define F_CPU 16000000UL	
 #endif
 
 //Set the BAUD rate
@@ -18,7 +18,7 @@ void SPI_MasterInit()
 {
 	
 	//PB2 = SS, PB3 = MOSI, PB5 = SCK
-	DDRB |= (1 << DDB3) | (1 << DDB2) | (1 << DDB5);	//1 = Output
+	DDRB |= (1 << DDB3) | (1 << DDB2) | (1 << DDB5);	
 		
 	// Enable SPI, Master, set clock rate fck/16
 	SPCR = (1 << SPE) | (1 << MSTR) | (1 << SPR0);
@@ -35,9 +35,7 @@ void SPI_MasterTransmit(char cData)
 	//Wait for transmission complete. When the transmission is complete, SPIF is set to "1" 
 	while(!(SPSR & (1 << SPIF)))
 	{
-			
-		//Do nothing
-		
+					
 	}
 	
 	
